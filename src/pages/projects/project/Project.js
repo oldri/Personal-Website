@@ -4,24 +4,9 @@ import './Project.css'
 import image1 from '../../../images/image.png'
 import image2 from '../../../images/image2.png'
 import { useState } from 'react'
+import data from '../../../data/db.json'
 
-//project
-let project  = {
-    "title": "Çanta",
-    "project-type": "Freelance",
-    "id": "1",
-    "toolsUsed": ["JavaScript", "HTML", "CSS", "Bootstrap", "Netlify"],
-    "links": {
-        "website": "https://canta.xyz/",
-        "github": "https://github.com/oldri/Canta_2.0"
-    },
-    "description": [
-        "Programmed responsive website for a client using HTML, CSS, Bootstrap & Javascript, implementing media queries, hamburger menu animation, wide browser compatibility & reusable components ",
-        "Designed minimal clothing & accessory blog highlighting client pieces and collections, created interesting and user-friendly interactions, performed extensive user research improving the website design process",
-        "Deployed client website with Netlify"
-    ]
-}
-
+let project = data[0]
 
 export default function Project() {
   const [currentImage, setCurrentImage] = useState(image1)

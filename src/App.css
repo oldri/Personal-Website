@@ -2,11 +2,4 @@
   margin: 0%;
   display: block;
   padding: 0px;
-  height: 100vh;
-  background: rgba(91, 94, 108, 0.226);
-  background: linear-gradient(
-    234deg,
-    rgba(91, 94, 108, 0.473) 0%,
-    rgba(219, 219, 238, 0.192) 100%
-  );
 }

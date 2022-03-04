@@ -18,7 +18,7 @@ export default function Bio() {
             </p>
           
             <p>
-                Oldri holds a BA in Urban Studies from Concordia
+                Oldri completed a BA in Urban Studies from Concordia
                 University, where he gained a breadth of knowledge 
                 in city planning and sustainability, and won an 
                 award for a concept application addressing the issue 

@@ -1,0 +1,9 @@
+.projects-container {
+  margin: 0%;
+  padding: 0;
+  display: flex;
+}
+
+.child {
+  margin: 0px 20px;
+}

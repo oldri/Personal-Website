@@ -13,7 +13,7 @@ export default function Navbar() {
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/projects'>Projects</Link></li>
             <li><a 
-                href='https://drive.google.com/file/d/1UVKXDFZaw3Pb6Ad3hGkPNMeL0RPKPnKN/view?usp=sharing'
+                href='https://drive.google.com/file/d/1TAO2Y8yLgIBmjgtHXAcbLbcrIuPfqfmb/view?usp=sharing'
             >CV</a></li>
         </ul>
     </div>

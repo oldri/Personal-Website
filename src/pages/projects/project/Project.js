@@ -28,7 +28,8 @@ export default function Project() {
             >
             <button className="btn" onClick={() => handleClick()} >Click</button>
            </div>
-           <div className='project-info'>
+           {project.map((p) => (
+             <div className='project-info'>
               <h1 className='project-title'>{project.title}</h1>
               <p className='project-type'>{project['project-type']}</p>
               <br/>
@@ -49,7 +50,7 @@ export default function Project() {
                     <><p key={note}>{note}</p><br></br></>
                   ))}
               </p>
-           </div>
+           </div>))}
         </div>
     </div>
   )

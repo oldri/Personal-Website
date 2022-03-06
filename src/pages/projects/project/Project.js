@@ -1,24 +1,14 @@
+import { useState } from 'react'
+
 //styles
 import { FaGithub, FaGlobe  } from "react-icons/fa";
 import './Project.css'
 import image1 from '../../../images/image.png'
 import image2 from '../../../images/image2.png'
-import { useState } from 'react'
-import data from '../../../data/db.json'
 
-let project = data[0]
-
-export default function Project() {
+export default function Project({ project }) {
   const [currentImage, setCurrentImage] = useState(image1)
 
-  const handleClick = () => {
-    if(currentImage === image1){
-      setCurrentImage(image2)
-    }else{
-      setCurrentImage(image1)
-    }
-  }
-  
   return (
     <div className='project-container'>
         <div className='project-item'>
@@ -26,7 +16,7 @@ export default function Project() {
             className='project-slideshow'
             style={{ backgroundImage: `url(${currentImage})`  }}
             >
-            <button className="btn" onClick={() => handleClick()} >Click</button>
+            <button className="btn" onClick={() => setCurrentImage(currentImage === image1 ? image2 : image1)} >Click</button>
            </div>
            {project.map((p) => (
              <div className='project-info'>

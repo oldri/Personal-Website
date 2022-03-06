@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom/cjs/react-router-dom.min';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 //components
 import Navbar from './components/Navbar'
 //pages
@@ -12,14 +12,10 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
-        <Switch>
-          <Route exact path='/'>
-            <Home />
-          </Route>
-          <Route path='/projects'>
-            <Projects />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/projects' element={<Projects />} />            
+        </Routes>
       </Router>
     </div>
   );

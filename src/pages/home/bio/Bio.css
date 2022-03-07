@@ -34,3 +34,18 @@
   height: 100%;
   border-radius: 0 0 5px 5px;
 }
+
+@media (max-width: 768px) {
+  .bio-content p {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    background-color: #2b2a2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    height: 100%;
+    border-radius: 0 0 5px 5px;
+  }
+}

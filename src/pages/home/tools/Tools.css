@@ -3,7 +3,6 @@
   margin: 20px;
   padding: 0;
   border-radius: 5px;
-  height: 70vh;
 }
 
 .tools-header {
@@ -25,12 +24,16 @@
 .tools-content ul {
   font-size: 1.5em;
   display: grid;
+  position: relative;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .tools-content li {
-  padding: 20px;
+  margin: 20px;
   text-decoration: none;
   background-color: #e9f981;
   display: flex;
@@ -38,8 +41,6 @@
   justify-content: center;
   text-align: center;
   font-size: 1.1em;
-  height: 90%;
-  border-radius: 0 0 5px 5px;
 }
 
 .tools-content li:hover {
@@ -49,7 +50,7 @@
 
 @media (max-width: 768px) {
   .tools-content li {
-    padding: 20px;
+    margin: 10px;
     text-decoration: none;
     background-color: #e9f981;
     display: flex;
@@ -58,6 +59,5 @@
     text-align: center;
     font-size: 0.9em;
     height: 90%;
-    border-radius: 0 0 5px 5px;
   }
 }

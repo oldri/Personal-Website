@@ -13,24 +13,14 @@ export default function Tools() {
                 <ul>
                     <li>Java<FaJava /></li>
                     <li>React<FaReact/></li>
-                </ul>
-                <ul>
                     <li>Linux<FaLinux /></li>
                     <li>Git/Github<FaGithub /></li>
-                </ul>
-                 <ul>
                     <li>Firebase<SiFirebase/></li>
                     <li>Docker<FaDocker/></li>
-                </ul>
-                 <ul>
                     <li>HTML<SiHtml5 /></li>
                     <li>CSS<SiCss3/></li>
-                </ul>
-                 <ul>
                     <li>NPM<FaNpm/></li>
                     <li>SQL<SiMysql/></li>
-                </ul>
-                <ul>
                     <li>JavaScript<SiJavascript/></li>
                     <li>Adobe Creative Suite<SiAdobe/></li>
                 </ul>

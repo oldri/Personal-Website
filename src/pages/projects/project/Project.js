@@ -1,10 +1,11 @@
 import { useState } from 'react'
-
 //styles
 import { FaGithub, FaGlobe  } from "react-icons/fa";
 import './Project.css'
+//images
 import image1 from '../../../images/image.png'
 import image2 from '../../../images/image2.png'
+
 
 export default function Project({ project }) {
   const [currentImage, setCurrentImage] = useState(image1)
@@ -24,8 +25,8 @@ export default function Project({ project }) {
               <p className='project-type'>{project['project-type']}</p>
               <br/>
               <ul className='project-tools'>
-                {project && project.toolsUsed.map((tool) => (
-                  <li key={tool}>{tool}</li>
+                {project && project.toolsUsed.map((tool, i) => (
+                  <li key={i}>{tool}</li>
                 ))}
               </ul>
               <div className='links'>
@@ -36,8 +37,8 @@ export default function Project({ project }) {
               </div>
               <p className='project-description'>
                   <p className='project-description-header'>Description:</p>
-                  {project && project.description.map((note) => (
-                    <><p key={note}>{note}</p><br></br></>
+                  {project && project.description.map((note, i) => (
+                    <><p key={i}>{note}</p><br></br></>
                   ))}
               </p>
            </div>))}

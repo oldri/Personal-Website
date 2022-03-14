@@ -33,3 +33,9 @@ h4 {
 ul {
   list-style-type: none;
 }
+
+.loading,
+.error {
+  text-align: center;
+  margin: 40px auto;
+}
